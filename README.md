@@ -22,7 +22,7 @@
 - Set your database credentials in your `.env` file
 - Run migration `php artisan migrate --seed`
 
-##Admin Credentials
+## Admin Credentials
 
 Login: `admin@demo.com` <br>
 Password: `adminadmin1A`
