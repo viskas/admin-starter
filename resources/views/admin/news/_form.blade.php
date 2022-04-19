@@ -17,11 +17,11 @@
                 <div class="col-lg-12">
                     <div class="form-group @if ($errors->has('text')) has-error @endif">
                         {!! Form::label('text', __('Text'), ['class' => 'form-control-label']) !!} <span class="small text-danger">*</span>
-                        <textarea class="form-control" id="text" name="text">
-                    @if (isset($article->text))
+                        <textarea class="form-control" id="news-text" name="text" style="min-height: 400px">
+                            @if (isset($article->text))
                                 {!! $article->text !!}
                             @endif
-                </textarea>
+                         </textarea>
                         @if ($errors->has('text')) <p class="help-block">{{ $errors->first('text') }}</p> @endif
                     </div>
                 </div>
@@ -113,3 +113,9 @@
         </div>
     </div>
 </div>
+
+<style>
+    #cke_1_contents {
+        min-height: 400px;
+    }
+</style>

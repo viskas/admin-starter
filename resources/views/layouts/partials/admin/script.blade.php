@@ -4,14 +4,14 @@
 <script src="{{ asset('vendor/jquery-easing/jquery.easing.min.js') }}"></script>
 <script src="{{ asset('js/sb-admin-2.min.js') }}"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote.min.js"></script>
+<script src="https://cdn.ckeditor.com/4.18.0/standard/ckeditor.js"></script>
+
 <script src="{{ asset('js/custom.js') }}"></script>
 
 <script type="text/javascript">
     $(document).ready(function() {
-        $('#text').summernote({
-            height: 500,
-        });
+        var textarea = document.getElementById('news-text');
+        CKEDITOR.replace(textarea);
     });
 </script>
 
