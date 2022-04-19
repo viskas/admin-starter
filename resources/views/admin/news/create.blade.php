@@ -13,25 +13,7 @@
         </div>
     @endif
 
-    <div class="row">
-        <div class="col-lg-8 order-lg-1">
-            <div class="card shadow mb-4">
-                <div class="card-header py-3">
-                    <h6 class="m-0 font-weight-bold text-primary">{{ __('News') }}</h6>
-                </div>
-                {!! Form::open(['route' => ['admin.news.store'], 'enctype' => 'multipart/form-data']) !!}
-                    @include('admin.news._form')
-                    <div class="pl-lg-4" style="margin-bottom: 20px">
-                        <div class="row">
-                            <div class="col text-center">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Add') }}
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                {!! Form::close() !!}
-            </div>
-        </div>
-    </div>
+    {!! Form::open(['route' => ['admin.news.store'], 'enctype' => 'multipart/form-data']) !!}
+        @include('admin.news._form')
+    {!! Form::close() !!}
 @endsection

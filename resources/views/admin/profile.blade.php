@@ -20,7 +20,7 @@
             <div class="card shadow mb-4">
                 <div class="card-profile-image mt-4">
                     @if($user->avatar)
-                        <img src="{{ asset('storage/avatars/'.$user->id.'/'.$user->avatar)}}">
+                        <img src="{{ asset('storage/avatars/'.$user->id.'/'.$user->avatar) }}">
                     @else
                         <img class="rounded-circle font-weight-bold" src="https://ui-avatars.com/api/?background=466cd9&color=fff&size=1000&font-size=0.4&bold=true&name={{ mb_strtoupper(Auth::user()->name).'+'.mb_strtoupper(Auth::user()->last_name) }}" alt="">
                     @endif
