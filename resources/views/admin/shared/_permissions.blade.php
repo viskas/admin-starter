@@ -10,7 +10,7 @@
         <div class="card-body">
             <div class="row">
                 @foreach($permissions as $key => $items)
-                    <div class="col-md-12">
+                    <div class="col-md-4">
                         <ul class="treeview">
                             <li>
                                 <input type="checkbox" name="{{ $key }}" id="{{ $key }}" {{ $role->name === 'Admin' ? 'disabled checked' : '' }}>
