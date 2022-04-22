@@ -87,7 +87,7 @@ Route::group(['prefix' => \Mcamara\LaravelLocalization\Facades\LaravelLocalizati
     });
 });
 
-//Route::group(['prefix' => 'telegram'], function () {
-//    Route::post('/init', 'TelegramController@init')
-//        ->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);
-//});
+Route::group(['prefix' => 'telegram'], function () {
+    Route::match(['GET', 'POST'], '/handle', 'Admin\TelegramController@handle')
+        ->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);
+});

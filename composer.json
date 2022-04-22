@@ -15,7 +15,6 @@
         "fideloper/proxy": "^4.2",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0",
-        "irazasyed/telegram-bot-sdk": "3.4.1",
         "jackiedo/dotenv-editor": "^2.0",
         "kyslik/column-sortable": "^6.0",
         "laravel/framework": "^8.0",
