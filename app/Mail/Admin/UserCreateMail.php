@@ -3,22 +3,35 @@
 namespace App\Mail\Admin;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
+/**
+ * Class UserCreateMail
+ * @package App\Mail\Admin
+ */
 class UserCreateMail extends Mailable
 {
     use Queueable, SerializesModels;
 
+    /**
+     * User Email Address
+     *
+     * @var string
+     */
     private $userEmail;
 
+    /**
+     * User Password
+     *
+     * @var string
+     */
     private $userPassword;
 
     /**
-     * Create a new message instance.
-     *
-     * @return void
+     * UserCreateMail constructor.
+     * @param $email
+     * @param $password
      */
     public function __construct($email, $password)
     {
@@ -27,9 +40,7 @@ class UserCreateMail extends Mailable
     }
 
     /**
-     * Build the message.
-     *
-     * @return $this
+     * @return UserCreateMail
      */
     public function build()
     {
@@ -39,7 +50,7 @@ class UserCreateMail extends Mailable
         ];
 
         return $this->markdown('admin.mail.userCreate')
-            ->subject('Доступ в панель администрации')
+            ->subject(__('Access to the administration panel'))
             ->with('details', $details);
     }
 }
