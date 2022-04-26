@@ -1,5 +1,6 @@
 {
     "A fresh verification link has been sent to your email address.": "Нове посилання для підтвердження надіслано на вашу електронну адресу.",
+    "Access to the administration panel": "Доступ до панелі адміністрування",
     "Action": "Дія",
     "Actions": "Дії",
     "Active": "Активний",
@@ -10,6 +11,7 @@
     "Add User": "Додати користувача",
     "Add new translation file": "Додати новий файл переводу",
     "Administration panel": "Панель адміністрації",
+    "All rights reserved.": "Всі права захищені.",
     "Already have an account? Login!": "Вже маєте аккаунт? Увійти!",
     "Are you sure you want to delete the entry?": "Ві впевнені що хочете видалити запис?",
     "Are you sure you want to disable two-factor authentication for the selected user?": "Ви впевнені, що хочете вимкнути двофакторну аутентифікацію для вибраного користувача?",
@@ -160,6 +162,8 @@
     "You have successfully logged in!": "Ви успішно авторизувались!",
     "You have successfully signed out of your secondary account.": "Ви успішно вийшли зі свого додаткового облікового запису.",
     "You may not complete. The password will be generated automatically.": "Ви можете не заповнювати. Пароль буде згенеровано автоматично.",
+    "Your login:": "Ваш логін:",
+    "Your password:": "Ваш пароль:",
     "click here to request another.": "натисніть тут, щоб відправити інший.",
     "entries": "записів"
 }

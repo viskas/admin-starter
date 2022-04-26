@@ -91,3 +91,7 @@ Route::group(['prefix' => 'telegram'], function () {
     Route::match(['GET', 'POST'], '/handle', 'Admin\TelegramController@handle')
         ->withoutMiddleware([\App\Http\Middleware\VerifyCsrfToken::class]);
 });
+
+Route::get('/mail', function() {
+    return new \App\Mail\Admin\UserCreateMail('demo@mail.com', 'adminadmin1A');
+});

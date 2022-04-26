@@ -1,5 +1,6 @@
 {
     "A fresh verification link has been sent to your email address.": "A fresh verification link has been sent to your email address.",
+    "Access to the administration panel": "Access to the administration panel",
     "Action": "Action",
     "Actions": "Actions",
     "Active": "Active",
@@ -10,6 +11,7 @@
     "Add User": "Add User",
     "Add new translation file": "Add new translation file",
     "Administration panel": "Administration panel",
+    "All rights reserved.": "All rights reserved.",
     "Already have an account? Login!": "Already have an account? Login!",
     "Are you sure you want to delete the entry?": "Are you sure you want to delete the entry?",
     "Are you sure you want to disable two-factor authentication for the selected user?": "Are you sure you want to disable two-factor authentication for the selected user?",
@@ -160,6 +162,8 @@
     "You have successfully logged in!": "You have successfully logged in!",
     "You have successfully signed out of your secondary account.": "You have successfully signed out of your secondary account.",
     "You may not complete. The password will be generated automatically.": "You may not complete. The password will be generated automatically.",
+    "Your login:": "Your login:",
+    "Your password:": "Your password:",
     "click here to request another.": "click here to request another.",
     "entries": "entries"
 }

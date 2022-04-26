@@ -1,5 +1,6 @@
 {
     "A fresh verification link has been sent to your email address.": "На ваш адрес электронной почты отправлена ​​новая ссылка для подтверждения.",
+    "Access to the administration panel": "Доступ в панель администрации",
     "Action": "Действие",
     "Actions": "Действия",
     "Active": "Активный",
@@ -10,6 +11,7 @@
     "Add User": "Добавить пользователя",
     "Add new translation file": "Добавить новый файл перевода",
     "Administration panel": "Панель администрации",
+    "All rights reserved.": "Все права защищены.",
     "Already have an account? Login!": "Уже есть аккаунт? Войти!",
     "Are you sure you want to delete the entry?": "Вы уверены что хотите удалить запись?",
     "Are you sure you want to disable two-factor authentication for the selected user?": "Вы уверены, что хотите отключить двухфакторную аутентификацию для выбранного пользователя?",
@@ -160,6 +162,8 @@
     "You have successfully logged in!": "Вы успешно авторизировались!",
     "You have successfully signed out of your secondary account.": "Вы успешно вышли из дополнительной учетной записи.",
     "You may not complete. The password will be generated automatically.": "Вы можете не заполнять. Пароль будет сгенерирован автоматически.",
+    "Your login:": "Ваш логин:",
+    "Your password:": "Ваш пароль:",
     "click here to request another.": "нажмите здесь, чтобы отправить повторно.",
     "entries": "записи"
 }
