@@ -64,8 +64,16 @@
                         <i class="fas fa-address-card fa-sm fa-fw mr-2 text-gray-400"></i>
                         {{ __('Profile') }}
                     </a>
+                @endcan
+
+                @can('view sessions')
+                    <a class="dropdown-item" href="{{ route('admin.sessions.index') }}">
+                        <i class="fas fa-history fa-sm fa-fw mr-2 text-gray-400"></i>
+                        {{ __('Sessions') }}
+                    </a>
                     <div class="dropdown-divider"></div>
                 @endcan
+
                 <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
                     <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
                     {{ __('Logout') }}

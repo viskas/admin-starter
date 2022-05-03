@@ -36,6 +36,12 @@ Route::group(['prefix' => \Mcamara\LaravelLocalization\Facades\LaravelLocalizati
             Route::get('/regenerate-two-step-secret', 'ProfileController@regenerateTwoStepSecret')->name('profile.googleTwoStepRegenerate')->middleware('permission:view profile');
         });
 
+        //User Sessions
+        Route::group(['prefix' => 'sessions'], function () {
+            Route::get('/', 'SessionController@index')->name('sessions.index')->middleware('permission:view sessions');
+            Route::delete('/{id}', 'SessionController@destroy')->name('sessions.destroy')->middleware('permission:delete sessions');
+        });
+
         //Users Management
         Route::group(['prefix' => 'users'], function () {
             Route::get('/', 'UserController@index')->name('users.index')->middleware('permission:view users');

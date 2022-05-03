@@ -46,6 +46,16 @@ class UsersTableSeeder extends Seeder
                 'description' => 'Change profile',
             ],
             [
+                'group' => 'Sessions',
+                'name' => 'view sessions',
+                'description' => 'View sessions',
+            ],
+            [
+                'group' => 'Sessions',
+                'name' => 'delete sessions',
+                'description' => 'Delete sessions',
+            ],
+            [
                 'group' => 'Users',
                 'name' => 'view users',
                 'description' => 'View users',

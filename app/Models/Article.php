@@ -8,6 +8,10 @@ use Kyslik\ColumnSortable\Sortable;
 use Spatie\Sluggable\HasSlug;
 use Spatie\Sluggable\SlugOptions;
 
+/**
+ * Class Article
+ * @package App\Models
+ */
 class Article extends Model
 {
     use Sortable, HasSlug, Filterable;

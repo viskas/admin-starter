@@ -53,15 +53,6 @@
         {{ __('Settings') }}
     </div>
 
-    @can('view profile')
-        <li class="nav-item {{ Nav::isRoute('admin.profile.*') }}">
-            <a class="nav-link" href="{{ route('admin.profile.index') }}">
-                <i class="fas fa-fw fa-address-card"></i>
-                <span>{{ __('Profile') }}</span>
-            </a>
-        </li>
-    @endcan
-
     @can('view system settings')
         <li class="nav-item {{ Nav::isRoute('admin.systemSettings.*') }}">
             <a class="nav-link" href="{{ route('admin.systemSettings.index') }}">
