@@ -88,7 +88,8 @@ class TranslationService
             $allTranslations[$locale] = $translationsArray;
 
             foreach ($differencesArr as $key => $value) {
-                $allTranslations[$locale][$key] = '';
+//                $allTranslations[$locale][$key] = '';
+                $allTranslations[$locale] = [$key => ''] + $allTranslations[$locale];
             }
         }
 

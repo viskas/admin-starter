@@ -142,10 +142,10 @@
                             {{ __('Before proceeding, you need to set up the Google Authenticator app. Otherwise, you will not be able to login.') }}
                         </p>
 
-                        <a href="{{ route('admin.profile.googleTwoStep') }}" class="btn btn-warning" onclick="return confirm('Вы точно хотите отключить двухфакторную аутентификацию?')">
+                        <a href="{{ route('admin.profile.googleTwoStep') }}" class="btn btn-warning" onclick="return confirm('{{ __('Are you sure you want to disable two-factor authentication?') }}')">
                             {{ __('Disable') }}
                         </a>
-                        <a href="{{ route('admin.profile.googleTwoStepRegenerate') }}" class="btn btn-danger" onclick="return confirm('Вы точно хотите сгенерировать новый ключ? Вам необходимо будет повторно отсканировать новый QR код.')">
+                        <a href="{{ route('admin.profile.googleTwoStepRegenerate') }}" class="btn btn-danger" onclick="return confirm('{{ __('Are you sure you want to generate a new key? You will need to re-scan a new QR code.') }}')">
                             {{ __('Generate New Key') }}
                         </a>
                     @else

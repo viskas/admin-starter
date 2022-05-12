@@ -15,6 +15,8 @@
     "Already have an account? Login!": "Уже есть аккаунт? Войти!",
     "Are you sure you want to delete the entry?": "Вы уверены что хотите удалить запись?",
     "Are you sure you want to disable two-factor authentication for the selected user?": "Вы уверены, что хотите отключить двухфакторную аутентификацию для выбранного пользователя?",
+    "Are you sure you want to disable two-factor authentication?": "Вы уверены, что хотите отключить двухфакторную аутентификацию?",
+    "Are you sure you want to generate a new key? You will need to re-scan a new QR code.": "Вы уверены, что хотите сгенерировать новый ключ? Вам нужно будет повторно отсканировать новый QR-код.",
     "Are you sure you want to log in with this user account?": "Вы уверены, что хотите войти в систему с этой учетной записи данного пользователя?",
     "Are you sure you want to logout?": "Вы уверены что хотите выйти?",
     "Are you sure you want to make new settings?": "Вы уверены что хотите применить новые настройки?",
