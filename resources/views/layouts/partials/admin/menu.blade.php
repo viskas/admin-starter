@@ -1,4 +1,4 @@
-<ul class="navbar-nav sidebar sidebar-dark accordion" id="accordionSidebar"
+<ul class="navbar-nav sidebar sidebar-dark accordion toggled" id="accordionSidebar"
     style="background-image: linear-gradient(180deg, #457fca, #5691c8);">
     <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('site') }}">
         <div class="sidebar-brand-icon rotate-n-15">
