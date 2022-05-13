@@ -143,7 +143,7 @@ class UsersTableSeeder extends Seeder
             [
                 'group' => 'Translations',
                 'name' => 'create translations',
-                'description' => 'Upload New Translations File'
+                'description' => 'Upload Translations File'
             ],
             [
                 'group' => 'Translations',

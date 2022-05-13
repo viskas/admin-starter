@@ -1,4 +1,4 @@
-<div class="card my-3">
+<div class="card my-2">
     <div class="card-header" role="tab" id="{{ isset($title) ? str_slug($title) :  'permissionHeading' }}">
         <h4 class="mb-0">
             <a role="button" data-toggle="collapse" href="#dd-{{ isset($title) ? str_slug($title) :  'permissionHeading' }}" aria-expanded="{{ isset($closed) ? 'true' : 'false' }}" aria-controls="dd-{{ isset($title) ? str_slug($title) :  'permissionHeading' }}">
@@ -10,8 +10,8 @@
         <div class="card-body">
             <div class="row">
                 @foreach($permissions as $key => $items)
-                    <div class="col-md-4">
-                        <ul class="treeview">
+                    <div class="col-md-3">
+                        <ul class="treeview" style="list-style-type: none;">
                             <li>
                                 <input type="checkbox" name="{{ $key }}" id="{{ $key }}" {{ $role->name === 'Admin' ? 'disabled checked' : '' }}>
                                 <label for="{{ $key }}" class="custom-unchecked">{{ $key }}</label>

@@ -36,8 +36,8 @@
     <div class="row">
         <div class="col-md-12">
             @can('create roles')
-                <a href="#" class="btn btn-sm btn-success pull-right" data-toggle="modal" data-target="#roleModal">
-                    <i class="fe fe-plus"></i>
+                <a href="#" class="btn btn-primary pull-right" data-toggle="modal" data-target="#roleModal">
+                    <i class="fas fa-fw fa-plus" aria-hidden="true"></i>
                     {{ __('Add New Role') }}
                 </a>
             @endcan
