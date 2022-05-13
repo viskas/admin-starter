@@ -15,7 +15,7 @@
                             <li>
                                 <input type="checkbox" name="{{ $key }}" id="{{ $key }}" {{ $role->name === 'Admin' ? 'disabled checked' : '' }}>
                                 <label for="{{ $key }}" class="custom-unchecked">{{ $key }}</label>
-                                <ul>
+                                <ul style="list-style-type: none;">
                                     @foreach($items as $key => $item)
                                         @php
                                             $per_found = null;
