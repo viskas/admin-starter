@@ -31,6 +31,7 @@ class CreateNewsRequest extends FormRequest
             'meta_description' => 'nullable|min:2',
             'meta_keywords' => 'nullable|min:2',
             'status' => 'required|in:active,inactive',
+            'published_at' => 'required|date'
         ];
     }
 }

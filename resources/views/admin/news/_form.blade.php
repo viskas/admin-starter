@@ -1,3 +1,25 @@
+@section('additional-css')
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css"/>
+    <style>
+        #cke_1_contents {
+            min-height: 400px;
+        }
+    </style>
+@endsection
+
+@section('additional-js')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.2.0/js/locales/bootstrap-datepicker.{{ app()->getLocale() }}.js"></script>
+    <script>
+        $('#published_at').datepicker({
+            format: 'yyyy-mm-dd',
+            autoclose: true,
+            todayHighlight: true,
+            language: '{{ app()->getLocale() }}'
+        });
+    </script>
+@endsection
+
 <div class="row">
     <div class="col-md-8 order-lg-1">
         <div class="card shadow mb-4">
@@ -23,6 +45,14 @@
                             @endif
                          </textarea>
                         @if ($errors->has('text')) <p class="help-block">{{ $errors->first('text') }}</p> @endif
+                    </div>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="form-group focused @if ($errors->has('published_at')) has-error @endif">
+                        {!! Form::label('published_at', __('Published At'), ['class' => 'form-control-label']) !!} <span class="small text-danger">*</span>
+                        {!! Form::text('published_at', null, ['class' => 'form-control', 'placeholder' => __('Published At')]) !!}
+                        @if ($errors->has('published_at')) <p class="help-block">{{ $errors->first('published_at') }}</p> @endif
                     </div>
                 </div>
 
@@ -113,9 +143,3 @@
         </div>
     </div>
 </div>
-
-<style>
-    #cke_1_contents {
-        min-height: 400px;
-    }
-</style>

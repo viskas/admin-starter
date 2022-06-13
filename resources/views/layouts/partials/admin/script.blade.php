@@ -8,6 +8,8 @@
 
 <script src="{{ asset('js/custom.js') }}"></script>
 
+@yield('additional-js')
+
 <script type="text/javascript">
     $(document).ready(function() {
         var textarea = document.getElementById('news-text');

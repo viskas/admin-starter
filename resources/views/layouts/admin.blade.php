@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.18/summernote.min.css" />
     <link href="{{ asset('css/sb-admin-2.min.css') }}" rel="stylesheet">
     <link href="{{ asset('css/sb-admin-custom.css') }}" rel="stylesheet">
+    @yield('additional-css')
 
     <link href="{{ asset('img/favicon.png') }}" rel="icon" type="image/png">
 </head>

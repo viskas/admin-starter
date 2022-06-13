@@ -26,13 +26,15 @@ class Article extends Model
         'status',
         'meta_title',
         'meta_description',
-        'meta_keywords'
+        'meta_keywords',
+        'published_at'
     ];
 
     public $sortable = [
         'title',
         'slug',
         'status',
+        'published_at',
         'created_at',
         'updated_at'
     ];

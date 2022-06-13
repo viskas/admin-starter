@@ -29,6 +29,7 @@
                             <th>@sortablelink('title', __('Title'))</th>
                             <th>@sortablelink('slug', __('Slug'))</th>
                             <th>@sortablelink('status', __('Status'))</th>
+                            <th>@sortablelink('published_at', __('Published At'))</th>
                             <th>@sortablelink('created_at', __('Created At'))</th>
                             <th></th>
                         </tr>
@@ -41,6 +42,7 @@
                             <th>@sortablelink('title', __('Title'))</th>
                             <th>@sortablelink('slug', __('Slug'))</th>
                             <th>@sortablelink('status', __('Status'))</th>
+                            <th>@sortablelink('published_at', __('Published At'))</th>
                             <th>@sortablelink('created_at', __('Created At'))</th>
                             <th></th>
                         </tr>
@@ -60,6 +62,9 @@
                                     <?= $article->status == 'active' ?
                                         "<span class='badge badge-success'>".__('Active')."</span>" :
                                         "<span class='badge badge-danger'>".__('Inactive')."</span>" ?>
+                                </td>
+                                <td>
+                                    {{ \Carbon\Carbon::parse($article->published_at)->format('d.m.Y')}}
                                 </td>
                                 <td>
                                     {{ \Carbon\Carbon::parse($article->created_at)->format('d.m.Y H:i')}}
@@ -94,7 +99,7 @@
                         @endforeach
                     @else
                         <tr>
-                            <td colspan="7" class="text-center">
+                            <td colspan="8" class="text-center">
                                 {{ __('News Not Found.') }}
                             </td>
                         </tr>
