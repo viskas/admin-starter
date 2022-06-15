@@ -101,6 +101,26 @@ class UsersTableSeeder extends Seeder
                 'description' => 'Update roles'
             ],
             [
+                'group' => 'Categories',
+                'name' => 'view categories',
+                'description' => 'View Categories'
+            ],
+            [
+                'group' => 'Categories',
+                'name' => 'create categories',
+                'description' => 'Create Categories'
+            ],
+            [
+                'group' => 'Categories',
+                'name' => 'update categories',
+                'description' => 'Update Categories'
+            ],
+            [
+                'group' => 'Categories',
+                'name' => 'delete categories',
+                'description' => 'Delete Categories'
+            ],
+            [
                 'group' => 'News',
                 'name' => 'view news',
                 'description' => 'View News'

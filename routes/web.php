@@ -65,6 +65,16 @@ Route::group(['prefix' => \Mcamara\LaravelLocalization\Facades\LaravelLocalizati
             Route::put('/{id}', 'RoleController@update')->name('role.update')->middleware('permission:update roles');
         });
 
+        //Categories Management
+        Route::group(['prefix' => 'category'], function () {
+            Route::get('/', 'CategoryController@index')->name('categories.index')->middleware('permission:view categories');
+            Route::get('/create', 'CategoryController@create')->name('categories.create')->middleware('permission:create categories');
+            Route::post('/', 'CategoryController@store')->name('categories.store')->middleware('permission:create categories');
+            Route::get('/{id}', 'CategoryController@edit')->name('categories.edit')->middleware('permission:update categories');
+            Route::put('/{id}', 'CategoryController@update')->name('categories.update')->middleware('permission:update categories');
+            Route::delete('/{id}', 'CategoryController@destroy')->name('categories.destroy')->middleware('permission:delete categories');
+        });
+
         //News Management
         Route::group(['prefix' => 'news'], function () {
             Route::get('/', 'NewsController@index')->name('news.index')->middleware('permission:view news');

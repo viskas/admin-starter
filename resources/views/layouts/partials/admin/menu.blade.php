@@ -33,6 +33,15 @@
         </li>
     @endcan
 
+    @can('view categories')
+        <li class="nav-item {{ Nav::isRoute('admin.categories.*') }}">
+            <a class="nav-link" href="{{ route('admin.categories.index') }}">
+                <i class="fas fa-fw fa-list-ul"></i>
+                <span>{{ __('Categories') }}</span>
+            </a>
+        </li>
+    @endcan
+
     @can('view news')
         <li class="nav-item {{ Nav::isRoute('admin.news.*') }}">
             <a class="nav-link" href="{{ route('admin.news.index') }}">

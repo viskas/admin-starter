@@ -8,7 +8,7 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^7.3.0",
+        "php": "^8.0",
         "asm-laravel-admin-ext/tmeditor": "^1.0",
         "bacon/bacon-qr-code": "^2.0",
         "devmarketer/easynav": "^1.0",
@@ -17,6 +17,7 @@
         "guzzlehttp/guzzle": "^7.0",
         "jackiedo/dotenv-editor": "^2.0",
         "jenssegers/agent": "^2.6",
+        "kalnoy/nestedset": "^6.0",
         "kyslik/column-sortable": "^6.0",
         "laravel/framework": "^8.0",
         "laravel/helpers": "^1.5",
